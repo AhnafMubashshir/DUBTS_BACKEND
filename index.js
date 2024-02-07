@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// connectDB();
+connectDB();
 
 const locationRoutes = require("./routes/locationRoutes");
 app.use("/dubts/bus-location", locationRoutes);
