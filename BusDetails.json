@@ -1,0 +1,1335 @@
+[
+  {
+    "name": "Basanta",
+    "shortForm": "BSN",
+    "downTripBuses": [
+      {
+        "busCode": "BSN-2001",
+        "endingPoint": 10,
+        "startingPoint": 6,
+        "time": "12:35 PM"
+      },
+      {
+        "busCode": "BSN-2002",
+        "endingPoint": 10,
+        "startingPoint": 6,
+        "time": "01:35 PM"
+      },
+      {
+        "busCode": "BSN-2003",
+        "endingPoint": 10,
+        "startingPoint": 6,
+        "time": "02:35 PM"
+      },
+      {
+        "busCode": "BSN-2004",
+        "endingPoint": 10,
+        "startingPoint": 6,
+        "time": "03:35 PM"
+      },
+      {
+        "busCode": "BSN-2005",
+        "endingPoint": 10,
+        "startingPoint": 6,
+        "time": "04:35 PM"
+      },
+      {
+        "busCode": "BSN-2006",
+        "endingPoint": 10,
+        "startingPoint": 6,
+        "time": "05:35 PM"
+      }
+    ],
+    "upTripBuses": [
+      {
+        "busCode": "BSN-1001",
+        "endingPoint": 0,
+        "startingPoint": 5,
+        "time": "07:00 AM"
+      },
+      {
+        "busCode": "BSN-1002",
+        "endingPoint": 0,
+        "startingPoint": 5,
+        "time": "07:40 AM"
+      },
+      {
+        "busCode": "BSN-1003",
+        "endingPoint": 0,
+        "startingPoint": 5,
+        "time": "08:20 AM"
+      },
+      {
+        "busCode": "BSN-1004",
+        "endingPoint": 0,
+        "startingPoint": 5,
+        "time": "09:00 AM"
+      },
+      {
+        "busCode": "BSN-1005",
+        "endingPoint": 0,
+        "startingPoint": 5,
+        "time": "10:00 AM"
+      }
+    ],
+    "route": [
+      "Campus",
+      "Khilgaon Police Fari",
+      "Malibagh Community Center",
+      "Hazipara Petrol Pump",
+      "Rampura Bazer",
+      "Rampura TV Center",
+      "VC Chattar",
+      "Central Library",
+      "Annex Building",
+      "Curzon Hall",
+      "Rampura TV Center"
+    ]
+  },
+  {
+    "name": "Baishakhi",
+    "shortForm": "BSK",
+    "downTripBuses": [
+      {
+        "busCode": "BSK-2001",
+        "endingPoint": 27,
+        "startingPoint": 15,
+        "time": "12:30 PM"
+      },
+      {
+        "busCode": "BSK-2002",
+        "endingPoint": 27,
+        "startingPoint": 15,
+        "time": "01:15 PM"
+      },
+      {
+        "busCode": "BSK-2003",
+        "endingPoint": 27,
+        "startingPoint": 15,
+        "time": "02:20 PM"
+      },
+      {
+        "busCode": "BSK-2004",
+        "endingPoint": 27,
+        "startingPoint": 15,
+        "time": "03:30 PM"
+      },
+      {
+        "busCode": "BSK-2005",
+        "endingPoint": 27,
+        "startingPoint": 15,
+        "time": "04:30 PM"
+      },
+      {
+        "busCode": "BSK-2006",
+        "endingPoint": 27,
+        "startingPoint": 15,
+        "time": "05:00 PM"
+      },
+      {
+        "busCode": "BSK-2007",
+        "endingPoint": 27,
+        "startingPoint": 15,
+        "time": "05:30 PM"
+      }
+    ],
+    "upTripBuses": [
+      {
+        "busCode": "BSK-1001",
+        "endingPoint": 0,
+        "startingPoint": 14,
+        "time": "06:30 AM"
+      },
+      {
+        "busCode": "BSK-1002",
+        "endingPoint": 0,
+        "startingPoint": 13,
+        "time": "06:50 AM"
+      },
+      {
+        "busCode": "BSK-1003",
+        "endingPoint": 0,
+        "startingPoint": 13,
+        "time": "07:30 AM"
+      },
+      {
+        "busCode": "BSK-1004",
+        "endingPoint": 0,
+        "startingPoint": 13,
+        "time": "08:00 AM"
+      },
+      {
+        "busCode": "BSK-1005",
+        "endingPoint": 0,
+        "startingPoint": 13,
+        "time": "08:45 AM"
+      },
+      {
+        "busCode": "BSK-1006",
+        "endingPoint": 0,
+        "startingPoint": 13,
+        "time": "09:25 AM"
+      },
+      {
+        "busCode": "BSK-1007",
+        "endingPoint": 0,
+        "startingPoint": 13,
+        "time": "10:00 AM"
+      }
+    ],
+    "route": [
+      "Campus",
+      "Second Gate",
+      "Sher-E-Bangla Agricultural University (2nd Gate)",
+      "Taltola",
+      "Shewrapara bus stand (beside Police Box)",
+      "Kazipara over-bridge",
+      "10 number Shahjalal Islami Bank",
+      "Water tank",
+      "13 number",
+      "Police Staff College",
+      "Police College",
+      "14 number",
+      "Mili super market",
+      "Pulpar",
+      "Kochukhet",
+      "Curzon Hall",
+      "Sher-E-Bangla Agricultural University (2nd Gate)",
+      "Shewrapara",
+      "Shewrapara Technical",
+      "Kazipara",
+      "Al-Helal (Opposite Side)",
+      "10 number over-bridge",
+      "Water Tank",
+      "13 number",
+      "Police Staff College",
+      "Police College",
+      "14 number",
+      "Pulpar"
+    ]
+  },
+  {
+    "name": "Falguni",
+    "shortForm": "FLG",
+    "downTripBuses": [
+      {
+        "busCode": "FLG-2001",
+        "endingPoint": 32,
+        "startingPoint": 30,
+        "time": "01:10 PM"
+      },
+      {
+        "busCode": "FLG-2002",
+        "endingPoint": 32,
+        "startingPoint": 30,
+        "time": "02:50 PM"
+      },
+      {
+        "busCode": "FLG-2003",
+        "endingPoint": 32,
+        "startingPoint": 30,
+        "time": "04:10 PM"
+      },
+      {
+        "busCode": "FLG-2004",
+        "endingPoint": 32,
+        "startingPoint": 30,
+        "time": "05:10 PM"
+      }
+    ],
+    "upTripBuses": [
+      {
+        "busCode": "FLG-1001",
+        "endingPoint": 29,
+        "startingPoint": 14,
+        "time": "06:40 AM"
+      },
+      {
+        "busCode": "FLG-1002",
+        "endingPoint": 13,
+        "startingPoint": 0,
+        "time": "07:40 AM"
+      },
+      {
+        "busCode": "FLG-1003",
+        "endingPoint": 13,
+        "startingPoint": 0,
+        "time": "08:40 AM"
+      }
+    ],
+    "route": [
+      "link Road",
+      "Hossain Market",
+      "Uttar Badda",
+      "Subastu",
+      "Shahzadpur",
+      "Bashtola",
+      "Natun Bazer",
+      "Gulshan-1",
+      "TB Gait",
+      "Wareless",
+      "Amtoli",
+      "Mohakhali",
+      "Nabisco",
+      "Campus",
+      "Natun Bazer",
+      "Bashtola",
+      "Shahzadpur",
+      "Subastu",
+      "Uttar Badda",
+      "Hossain Market",
+      "Moddho Badda",
+      "Link Road",
+      "Gudaraghat",
+      "Gulshan-1",
+      "TB Gait",
+      "Wareless",
+      "Amtoli",
+      "Mohakhali",
+      "Nabisco",
+      "Campus",
+      "Mall Chattor",
+      "Gulshan",
+      "Badda"
+    ]
+  },
+  {
+    "name": "Khanika",
+    "shortForm": "KHK",
+    "downTripBuses": [
+      {
+        "busCode": "KHK-2001",
+        "endingPoint": 25,
+        "startingPoint": 24,
+        "time": "12:15 PM"
+      },
+      {
+        "busCode": "KHK-2002",
+        "endingPoint": 22,
+        "startingPoint": 21,
+        "time": "01:10 PM"
+      },
+      {
+        "busCode": "KHK-2003",
+        "endingPoint": 26,
+        "startingPoint": 24,
+        "time": "01:45 PM"
+      },
+      {
+        "busCode": "KHK-2004",
+        "endingPoint": 22,
+        "startingPoint": 21,
+        "time": "02:30 PM"
+      },
+      {
+        "busCode": "KHK-2005",
+        "endingPoint": 25,
+        "startingPoint": 24,
+        "time": "03:10 PM"
+      },
+      {
+        "busCode": "KHK-2006",
+        "endingPoint": 23,
+        "startingPoint": 21,
+        "time": "03:50 PM"
+      },
+      {
+        "busCode": "KHK-2007",
+        "endingPoint": 25,
+        "startingPoint": 24,
+        "time": "04:30 PM"
+      },
+      {
+        "busCode": "KHK-2008",
+        "endingPoint": 26,
+        "startingPoint": 24,
+        "time": "05:10 PM"
+      },
+      {
+        "busCode": "KHK-2009",
+        "endingPoint": 26,
+        "startingPoint": 24,
+        "time": "05:40 PM"
+      }
+    ],
+    "upTripBuses": [
+      {
+        "busCode": "KHK-1001",
+        "endingPoint": 20,
+        "startingPoint": 0,
+        "time": "05:50 AM"
+      },
+      {
+        "busCode": "KHK-1002",
+        "endingPoint": 20,
+        "startingPoint": 0,
+        "time": "06:10 AM"
+      },
+      {
+        "busCode": "KHK-1003",
+        "endingPoint": 20,
+        "startingPoint": 7,
+        "time": "06:10 AM"
+      },
+      {
+        "busCode": "KHK-1004",
+        "endingPoint": 20,
+        "startingPoint": 0,
+        "time": "06:40 AM"
+      },
+      {
+        "busCode": "KHK-1005",
+        "endingPoint": 20,
+        "startingPoint": 7,
+        "time": "06:40 AM"
+      },
+      {
+        "busCode": "KHK-1006",
+        "endingPoint": 20,
+        "startingPoint": 7,
+        "time": "07:00 AM"
+      },
+      {
+        "busCode": "KHK-1007",
+        "endingPoint": 20,
+        "startingPoint": 7,
+        "time": "07:30 AM"
+      },
+      {
+        "busCode": "KHK-1008",
+        "endingPoint": 20,
+        "startingPoint": 7,
+        "time": "08:15 AM"
+      },
+      {
+        "busCode": "KHK-1009",
+        "endingPoint": 20,
+        "startingPoint": 7,
+        "time": "09:00 AM"
+      }
+    ],
+    "route": [
+      "Shib-Bari",
+      "Chourasta",
+      "Bypass",
+      "Maleker Bari",
+      "Signboard",
+      "Board Bazer",
+      "Boro Bari",
+      "College Gate",
+      "Station Road",
+      "Tongi Bazer",
+      "Abdullahpur",
+      "House Building",
+      "Azampur",
+      "Jashim Uddin",
+      "Biman Bandar",
+      "Kawla",
+      "Khilkhet",
+      "Bissho Road",
+      "Shewra",
+      "Kurmitola",
+      "Campus",
+      "VC Chattar",
+      "College Gate",
+      "Shib-Bari",
+      "Curzon Hall",
+      "College Gate",
+      "Shib-Bari"
+    ]
+  },
+  {
+    "name": "Kinchit",
+    "shortForm": "KCT",
+    "downTripBuses": [
+      {
+        "busCode": "KCT-2001",
+        "endingPoint": 0,
+        "startingPoint": 8,
+        "time": "12:30 PM"
+      },
+      {
+        "busCode": "KCT-2002",
+        "endingPoint": 0,
+        "startingPoint": 8,
+        "time": "01:30 PM"
+      },
+      {
+        "busCode": "KCT-2003",
+        "endingPoint": 0,
+        "startingPoint": 8,
+        "time": "02:30 PM"
+      },
+      {
+        "busCode": "KCT-2004",
+        "endingPoint": 0,
+        "startingPoint": 8,
+        "time": "03:20 PM"
+      },
+      {
+        "busCode": "KCT-2005",
+        "endingPoint": 0,
+        "startingPoint": 8,
+        "time": "04:20 PM"
+      },
+      {
+        "busCode": "KCT-2006",
+        "endingPoint": 0,
+        "startingPoint": 8,
+        "time": "05:30 PM"
+      }
+    ],
+    "upTripBuses": [
+      {
+        "busCode": "KCT-1001",
+        "endingPoint": 8,
+        "startingPoint": 0,
+        "time": "07:00 AM"
+      },
+      {
+        "busCode": "KCT-1002",
+        "endingPoint": 8,
+        "startingPoint": 0,
+        "time": "08:00 AM"
+      },
+      {
+        "busCode": "KCT-1003",
+        "endingPoint": 8,
+        "startingPoint": 0,
+        "time": "08:50 AM"
+      },
+      {
+        "busCode": "KCT-1004",
+        "endingPoint": 8,
+        "startingPoint": 0,
+        "time": "09:50 AM"
+      }
+    ],
+    "route": [
+      "Arambagh",
+      "Kamalapur",
+      "Ideal School and College gate",
+      "Rajarbagh",
+      "Malibagh",
+      "Mouchak",
+      "Wireless",
+      "VC Chattar",
+      "Curzon Hall"
+    ]
+  },
+  {
+    "name": "Srabon",
+    "shortForm": "SRB",
+    "downTripBuses": [
+      {
+        "busCode": "SRB-2001",
+        "endingPoint": 16,
+        "startingPoint": 7,
+        "time": "12:15 PM"
+      },
+      {
+        "busCode": "SRB-2002",
+        "endingPoint": 16,
+        "startingPoint": 8,
+        "time": "01:30 PM"
+      },
+      {
+        "busCode": "SRB-2003",
+        "endingPoint": 16,
+        "startingPoint": 7,
+        "time": "02:20 PM"
+      },
+      {
+        "busCode": "SRB-2004",
+        "endingPoint": 16,
+        "startingPoint": 8,
+        "time": "03:40 PM"
+      },
+      {
+        "busCode": "SRB-2005",
+        "endingPoint": 16,
+        "startingPoint": 8,
+        "time": "04:30 PM"
+      },
+      {
+        "busCode": "SRB-2006",
+        "endingPoint": 16,
+        "startingPoint": 7,
+        "time": "05:00 PM"
+      },
+      {
+        "busCode": "SRB-2007",
+        "endingPoint": 16,
+        "startingPoint": 7,
+        "time": "05:30 PM"
+      }
+    ],
+    "upTripBuses": [
+      {
+        "busCode": "SRB-1001",
+        "endingPoint": 6,
+        "startingPoint": 0,
+        "time": "07:00 AM"
+      },
+      {
+        "busCode": "SRB-1002",
+        "endingPoint": 6,
+        "startingPoint": 0,
+        "time": "07:20 AM"
+      },
+      {
+        "busCode": "SRB-1003",
+        "endingPoint": 6,
+        "startingPoint": 0,
+        "time": "07:55 AM"
+      },
+      {
+        "busCode": "SRB-1004",
+        "endingPoint": 6,
+        "startingPoint": 0,
+        "time": "08:15 AM"
+      },
+      {
+        "busCode": "SRB-1005",
+        "endingPoint": 6,
+        "startingPoint": 0,
+        "time": "09:00 AM"
+      },
+      {
+        "busCode": "SRB-1006",
+        "endingPoint": 6,
+        "startingPoint": 0,
+        "time": "10:00 AM"
+      }
+    ],
+    "route": [
+      "Mugda Stadium",
+      "Mugda Bisshoroad",
+      "Mugda Medical",
+      "Buddha Mandir",
+      "Bashabo",
+      "Khilgaon Rail-Gate",
+      "Campus",
+      "VC Chattar",
+      "TSC",
+      "DMC",
+      "Shahidullah Hall More",
+      "Maniknagar",
+      "Mugda Garments",
+      "Mugda Bisshoroad",
+      "Buddha Mandir",
+      "Bashabo",
+      "Khilgaon Rail-Gate"
+    ]
+  },
+  {
+    "name": "Taranga",
+    "shortForm": "TRG",
+    "downTripBuses": [
+      {
+        "busCode": "TRG-2001",
+        "endingPoint": 14,
+        "startingPoint": 27,
+        "time": "12:30 PM"
+      },
+      {
+        "busCode": "TRG-2002",
+        "endingPoint": 14,
+        "startingPoint": 27,
+        "time": "01:15 PM"
+      },
+      {
+        "busCode": "TRG-2003",
+        "endingPoint": 14,
+        "startingPoint": 27,
+        "time": "02:00 PM"
+      },
+      {
+        "busCode": "TRG-2004",
+        "endingPoint": 14,
+        "startingPoint": 27,
+        "time": "02:45 PM"
+      },
+      {
+        "busCode": "TRG-2005",
+        "endingPoint": 14,
+        "startingPoint": 27,
+        "time": "03:30 PM"
+      },
+      {
+        "busCode": "TRG-2006",
+        "endingPoint": 14,
+        "startingPoint": 27,
+        "time": "04:15 PM"
+      },
+      {
+        "busCode": "TRG-2007",
+        "endingPoint": 14,
+        "startingPoint": 27,
+        "time": "04:45 PM"
+      },
+      {
+        "busCode": "TRG-2008",
+        "endingPoint": 14,
+        "startingPoint": 27,
+        "time": "05:15 PM"
+      },
+      {
+        "busCode": "TRG-2009",
+        "endingPoint": 14,
+        "startingPoint": 27,
+        "time": "05:35 PM"
+      }
+    ],
+    "upTripBuses": [
+      {
+        "busCode": "TRG-1001",
+        "endingPoint": 13,
+        "startingPoint": 0,
+        "time": "07:10 AM"
+      },
+      {
+        "busCode": "TRG-1002",
+        "endingPoint": 13,
+        "startingPoint": 1,
+        "time": "07:30 AM"
+      },
+      {
+        "busCode": "TRG-1003",
+        "endingPoint": 13,
+        "startingPoint": 1,
+        "time": "08:00 AM"
+      },
+      {
+        "busCode": "TRG-1004",
+        "endingPoint": 13,
+        "startingPoint": 1,
+        "time": "08:30 AM"
+      },
+      {
+        "busCode": "TRG-1005",
+        "endingPoint": 13,
+        "startingPoint": 1,
+        "time": "09:10 AM"
+      },
+      {
+        "busCode": "TRG-1006",
+        "endingPoint": 13,
+        "startingPoint": 1,
+        "time": "10:10 AM"
+      }
+    ],
+    "route": [
+      "DRMC",
+      "Moitree Counter",
+      "Mohammadpur Bus Stand",
+      "Academia",
+      "Dhanmondi 27 (Zatri Chauni)",
+      "Dhanmondi 19 (Abahoni Field)",
+      "Dhanmondi 15 (Kakoli)",
+      "Zigatola (Ecstasy Showroom)",
+      "Neelkhet Mor",
+      "Arts Building",
+      "TSC",
+      "Motaher Hossain Building",
+      "Mokarram Building",
+      "Curzon Hall",
+      "Asad Gate",
+      "Town Hall",
+      "Salimullah Road",
+      "Noorjahan Road",
+      "Mohammadpur Bus Stand",
+      "Graphics College",
+      "Shankar",
+      "Star Kabab",
+      "Dhanmondi 15 (BFC)",
+      "Zigatola",
+      "VC Chottor",
+      "TSC",
+      "Motaher Hossain Building",
+      "Curzon Hall"
+    ]
+  },
+  {
+    "name": "Moitri",
+    "shortForm": "MTR",
+    "downTripBuses": [
+      {
+        "busCode": "MTR-2001",
+        "endingPoint": 0,
+        "startingPoint": 19,
+        "time": "12:15 PM"
+      },
+      {
+        "busCode": "MTR-2002",
+        "endingPoint": 0,
+        "startingPoint": 19,
+        "time": "01:15 PM"
+      },
+      {
+        "busCode": "MTR-2003",
+        "endingPoint": 0,
+        "startingPoint": 19,
+        "time": "02:15 PM"
+      },
+      {
+        "busCode": "MTR-2004",
+        "endingPoint": 0,
+        "startingPoint": 19,
+        "time": "03:15 PM"
+      },
+      {
+        "busCode": "MTR-2005",
+        "endingPoint": 0,
+        "startingPoint": 19,
+        "time": "04:05 PM"
+      },
+      {
+        "busCode": "MTR-2006",
+        "endingPoint": 0,
+        "startingPoint": 19,
+        "time": "05:15 PM"
+      }
+    ],
+    "upTripBuses": [
+      {
+        "busCode": "MTR-1001",
+        "endingPoint": 19,
+        "startingPoint": 0,
+        "time": "06:25 AM"
+      },
+      {
+        "busCode": "MTR-1002",
+        "endingPoint": 19,
+        "startingPoint": 0,
+        "time": "07:10 AM"
+      },
+      {
+        "busCode": "MTR-1003",
+        "endingPoint": 19,
+        "startingPoint": 10,
+        "time": "08:00 AM"
+      },
+      {
+        "busCode": "MTR-1004",
+        "endingPoint": 19,
+        "startingPoint": 0,
+        "time": "08:20 AM"
+      },
+      {
+        "busCode": "MTR-1005",
+        "endingPoint": 19,
+        "startingPoint": 0,
+        "time": "09:15 AM"
+      }
+    ],
+    "route": [
+      "IIT School",
+      "Pathangoli",
+      "Chowdhuri Para",
+      "2 Number",
+      "Jaulapar",
+      "Adomji",
+      "Power House",
+      "Siddhirgong",
+      "Chittagong Road",
+      "Golakata",
+      "Ranimohol",
+      "Sarulia Bazar",
+      "Staff Quarter",
+      "Basher Pool",
+      "Konapara",
+      "Matuail",
+      "Bhanga",
+      "Press",
+      "Jatrabari",
+      "Campus"
+    ]
+  },
+  {
+    "name": "Anondo",
+    "shortForm": "AND",
+    "downTripBuses": [
+      {
+        "busCode": "AND-2001",
+        "endingPoint": 0,
+        "startingPoint": 12,
+        "time": "01:10 PM"
+      },
+      {
+        "busCode": "AND-2002",
+        "endingPoint": 0,
+        "startingPoint": 12,
+        "time": "02:30 PM"
+      },
+      {
+        "busCode": "AND-2003",
+        "endingPoint": 0,
+        "startingPoint": 12,
+        "time": "04:05 PM"
+      },
+      {
+        "busCode": "AND-2004",
+        "endingPoint": 0,
+        "startingPoint": 12,
+        "time": "05:10 PM"
+      }
+    ],
+    "upTripBuses": [
+      {
+        "busCode": "AND-1001",
+        "endingPoint": 12,
+        "startingPoint": 0,
+        "time": "06:50 AM"
+      },
+      {
+        "busCode": "AND-1002",
+        "endingPoint": 12,
+        "startingPoint": 0,
+        "time": "07:30 AM"
+      },
+      {
+        "busCode": "AND-1003",
+        "endingPoint": 12,
+        "startingPoint": 10,
+        "time": "08:50 AM"
+      }
+    ],
+    "route": [
+      "Nondir Para",
+      "2 Number Gate",
+      "Kalir Bazar",
+      "Chashara",
+      "Zilla Proshashon",
+      "Roni Market",
+      "Stadium",
+      "Buigor",
+      "Jalkuri",
+      "Sign Board",
+      "Curzon Hall",
+      "TSC",
+      "Mol Chottor"
+    ]
+  },
+  {
+    "name": "Hemonto",
+    "shortForm": "HMT",
+    "downTripBuses": [
+      {
+        "busCode": "HMT-2001",
+        "endingPoint": 0,
+        "startingPoint": 10,
+        "time": "01:10 PM"
+      },
+      {
+        "busCode": "HMT-2002",
+        "endingPoint": 0,
+        "startingPoint": 10,
+        "time": "03:30 PM"
+      },
+      {
+        "busCode": "HMT-2003",
+        "endingPoint": 0,
+        "startingPoint": 10,
+        "time": "05:00 PM"
+      }
+    ],
+    "upTripBuses": [
+      {
+        "busCode": "HMT-1001",
+        "endingPoint": 10,
+        "startingPoint": 0,
+        "time": "06:20 AM"
+      },
+      {
+        "busCode": "HMT-1002",
+        "endingPoint": 10,
+        "startingPoint": 0,
+        "time": "07:30 AM"
+      },
+      {
+        "busCode": "HMT-1003",
+        "endingPoint": 10,
+        "startingPoint": 0,
+        "time": "08:00 AM"
+      }
+    ],
+    "route": [
+      "Savar",
+      "Nobinogor Joya",
+      "Bish Mail",
+      "CMB",
+      "Savar Stand",
+      "Khana Stand",
+      "Genda",
+      "Fulbaria",
+      "Olain",
+      "Gabtoli",
+      "Campus"
+    ]
+  },
+  {
+    "name": "Esha Kha",
+    "shortForm": "ESK",
+    "downTripBuses": [
+      {
+        "busCode": "ESK-1001",
+        "endingPoint": 3,
+        "startingPoint": 17,
+        "time": "12:20 PM"
+      },
+      {
+        "busCode": "ESK-1002",
+        "endingPoint": 1,
+        "startingPoint": 17,
+        "time": "01:30 PM"
+      },
+      {
+        "busCode": "ESK-1003",
+        "endingPoint": 3,
+        "startingPoint": 17,
+        "time": "01:30 PM"
+      },
+      {
+        "busCode": "ESK-1004",
+        "endingPoint": 3,
+        "startingPoint": 17,
+        "time": "02:30 PM"
+      },
+      {
+        "busCode": "ESK-1005",
+        "endingPoint": 1,
+        "startingPoint": 17,
+        "time": "03:30 PM"
+      },
+      {
+        "busCode": "ESK-1006",
+        "endingPoint": 0,
+        "startingPoint": 17,
+        "time": "04:05 PM"
+      },
+      {
+        "busCode": "ESK-1007",
+        "endingPoint": 3,
+        "startingPoint": 17,
+        "time": "04:10 PM"
+      },
+      {
+        "busCode": "ESK-1008",
+        "endingPoint": 3,
+        "startingPoint": 17,
+        "time": "04:30 PM"
+      },
+      {
+        "busCode": "ESK-1009",
+        "endingPoint": 3,
+        "startingPoint": 17,
+        "time": "05:00 PM"
+      },
+      {
+        "busCode": "ESK-1010",
+        "endingPoint": 1,
+        "startingPoint": 17,
+        "time": "05:30 PM"
+      }
+    ],
+    "upTripBuses": [
+      {
+        "busCode": "ESK-2001",
+        "endingPoint": 17,
+        "startingPoint": 1,
+        "time": "06:40 AM"
+      },
+      {
+        "busCode": "ESK-2002",
+        "endingPoint": 17,
+        "startingPoint": 3,
+        "time": "06:50 AM"
+      },
+      {
+        "busCode": "ESK-2003",
+        "endingPoint": 17,
+        "startingPoint": 1,
+        "time": "07:30 AM"
+      },
+      {
+        "busCode": "ESK-2004",
+        "endingPoint": 17,
+        "startingPoint": 0,
+        "time": "07:45 AM"
+      },
+      {
+        "busCode": "ESK-2005",
+        "endingPoint": 17,
+        "startingPoint": 3,
+        "time": "07:50 AM"
+      },
+      {
+        "busCode": "ESK-2006",
+        "endingPoint": 17,
+        "startingPoint": 3,
+        "time": "08:20 AM"
+      },
+      {
+        "busCode": "ESK-2007",
+        "endingPoint": 17,
+        "startingPoint": 3,
+        "time": "08:50 AM"
+      },
+      {
+        "busCode": "ESK-2008",
+        "endingPoint": 17,
+        "startingPoint": 10,
+        "time": "09:05 AM"
+      },
+      {
+        "busCode": "ESK-2009",
+        "endingPoint": 17,
+        "startingPoint": 3,
+        "time": "09:50 AM"
+      },
+      {
+        "busCode": "ESK-2010",
+        "endingPoint": 17,
+        "startingPoint": 10,
+        "time": "10:05 AM"
+      }
+    ],
+    "route": [
+      "Vober Char",
+      "Mograpara",
+      "Modonpur",
+      "Kachpur",
+      "Chittagong Road",
+      "Doshtola",
+      "Mouchak",
+      "Sanarpar",
+      "Signboard",
+      "Madrasa Road",
+      "Matuail",
+      "Rayerbag",
+      "Shanir Akhra",
+      "Kajla",
+      "DMC",
+      "Shahid Minar",
+      "TSC",
+      "VC Chottor"
+    ]
+  },
+  {
+    "name": "Chaitali",
+    "shortForm": "CHT",
+    "downTripBuses": [
+      {
+        "busCode": "CHT-1001",
+        "endingPoint": 0,
+        "startingPoint": 8,
+        "time": "12:30 PM"
+      },
+      {
+        "busCode": "CHT-1002",
+        "endingPoint": 0,
+        "startingPoint": 8,
+        "time": "01:30 PM"
+      },
+      {
+        "busCode": "CHT-1003",
+        "endingPoint": 0,
+        "startingPoint": 10,
+        "time": "02:30 PM"
+      },
+      {
+        "busCode": "CHT-1004",
+        "endingPoint": 0,
+        "startingPoint": 10,
+        "time": "03:30 PM"
+      },
+      {
+        "busCode": "CHT-1005",
+        "endingPoint": 0,
+        "startingPoint": 8,
+        "time": "04:20 PM"
+      },
+      {
+        "busCode": "CHT-1006",
+        "endingPoint": 0,
+        "startingPoint": 10,
+        "time": "05:00 PM"
+      },
+      {
+        "busCode": "CHT-1007",
+        "endingPoint": 0,
+        "startingPoint": 10,
+        "time": "05:30 PM"
+      }
+    ],
+    "upTripBuses": [
+      {
+        "busCode": "CHT-2001",
+        "endingPoint": 10,
+        "startingPoint": 0,
+        "time": "06:40 AM"
+      },
+      {
+        "busCode": "CHT-2002",
+        "endingPoint": 10,
+        "startingPoint": 0,
+        "time": "06:40 AM"
+      },
+      {
+        "busCode": "CHT-2003",
+        "endingPoint": 10,
+        "startingPoint": 0,
+        "time": "07:10 AM"
+      },
+      {
+        "busCode": "CHT-2004",
+        "endingPoint": 10,
+        "startingPoint": 0,
+        "time": "07:10 AM"
+      },
+      {
+        "busCode": "CHT-2005",
+        "endingPoint": 10,
+        "startingPoint": 0,
+        "time": "07:50 AM"
+      },
+      {
+        "busCode": "CHT-2006",
+        "endingPoint": 10,
+        "startingPoint": 0,
+        "time": "07:50 AM"
+      },
+      {
+        "busCode": "CHT-2007",
+        "endingPoint": 10,
+        "startingPoint": 0,
+        "time": "09:25 AM"
+      },
+      {
+        "busCode": "CHT-2008",
+        "endingPoint": 10,
+        "startingPoint": 0,
+        "time": "09:25 AM"
+      }
+    ],
+    "route": [
+      "Mirpur-12",
+      "Mirpur-11.5",
+      "Mirpur-6",
+      "Mirpur-2",
+      "Mirpur-1",
+      "Bangla College",
+      "Technical",
+      "Shamoli",
+      "Mall Chattor",
+      "TSC",
+      "Curzon Hall"
+    ]
+  },
+  {
+    "name": "Ullash",
+    "shortForm": "ULL",
+    "downTripBuses": [
+      {
+        "busCode": "ULL-1001",
+        "endingPoint": 8,
+        "startingPoint": 16,
+        "time": "12:10 PM"
+      },
+      {
+        "busCode": "ULL-1002",
+        "endingPoint": 8,
+        "startingPoint": 16,
+        "time": "01:10 PM"
+      },
+      {
+        "busCode": "ULL-1003",
+        "endingPoint": 8,
+        "startingPoint": 16,
+        "time": "02:10 PM"
+      },
+      {
+        "busCode": "ULL-1004",
+        "endingPoint": 8,
+        "startingPoint": 16,
+        "time": "03:10 PM"
+      },
+      {
+        "busCode": "ULL-1005",
+        "endingPoint": 8,
+        "startingPoint": 16,
+        "time": "04:15 PM"
+      },
+      {
+        "busCode": "ULL-1006",
+        "endingPoint": 8,
+        "startingPoint": 16,
+        "time": "05:10 PM"
+      },
+      {
+        "busCode": "ULL-1007",
+        "endingPoint": 8,
+        "startingPoint": 16,
+        "time": "05:35 PM"
+      }
+    ],
+    "upTripBuses": [
+      {
+        "busCode": "ULL-2001",
+        "endingPoint": 7,
+        "startingPoint": 0,
+        "time": "07:00 AM"
+      },
+      {
+        "busCode": "ULL-2002",
+        "endingPoint": 7,
+        "startingPoint": 0,
+        "time": "08:00 AM"
+      },
+      {
+        "busCode": "ULL-2003",
+        "endingPoint": 7,
+        "startingPoint": 0,
+        "time": "08:30 AM"
+      },
+      {
+        "busCode": "ULL-2004",
+        "endingPoint": 7,
+        "startingPoint": 0,
+        "time": "09:00 AM"
+      },
+      {
+        "busCode": "ULL-2005",
+        "endingPoint": 7,
+        "startingPoint": 0,
+        "time": "09:30 AM"
+      },
+      {
+        "busCode": "ULL-2006",
+        "endingPoint": 7,
+        "startingPoint": 0,
+        "time": "10:00 AM"
+      }
+    ],
+    "route": [
+      "Postogola",
+      "Jurain",
+      "Dholaipar",
+      "Nabi Nagar",
+      "Mir Hazirbag",
+      "DoyaGanj",
+      "Tikatuli",
+      "Campus",
+      "Doyaganj",
+      "Mir Hazirbag",
+      "NabiNagar",
+      "Dholaipar",
+      "Jurain",
+      "Postogola",
+      "Dholaipar",
+      "Tikatuli (Flyover)",
+      "Campus"
+    ]
+  }
+]
