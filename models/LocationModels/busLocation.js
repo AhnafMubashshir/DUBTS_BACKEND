@@ -20,6 +20,10 @@ const allLocationSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  dayName: {
+    type: String,
+    required: true,
+  },
   timeWiseLocationData: {
     type: [locationSchema],
     required: true,

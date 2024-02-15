@@ -14,10 +14,16 @@ router.put("/store-location/:busCode", async (req, res) => {
     }
 
     const { date, latitude, longitude, time } = req.body;
+    const parsedDate = new Date(date);
+    const dayOfWeek = parsedDate.getDay();
+    const dayName = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][dayOfWeek];
+
+    console.log(dayName);
 
     const createNewDateWiseLocation = () => {
       busLocation.dateWiseLocationData.push({
         date: date,
+        dayName: dayName,
         timeWiseLocationData: [
           {
             time: time,
@@ -47,6 +53,8 @@ router.put("/store-location/:busCode", async (req, res) => {
     }
 
     await busLocation.save();
+
+    console.log(`Location is saved successfully. for ${dayName} ${date}`);
 
     res.json({ message: "Bus location updated successfully" });
   } catch (error) {
