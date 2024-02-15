@@ -36,4 +36,18 @@ router.delete(`/delete-data/:busID`, async (req, res) => {
   res.json({ message: "Tis route is under construction" });
 });
 
+router.get("/get-all-bus-data", async (req, res) => {
+  console.log("I am here");
+  try {
+    const allBuses = await BusSchedules.find();
+    // allBuses.map(() => {
+
+    // })
+    res.json(allBuses);
+  } catch (error) {
+    console.error("Error fetching all bus data:", error);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
+
 module.exports = router;
