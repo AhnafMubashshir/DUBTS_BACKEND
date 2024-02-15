@@ -50,4 +50,16 @@ router.get("/get-all-bus-data", async (req, res) => {
   }
 });
 
+router.delete("/delete-all-bus-data", async (req, res) => {
+  try {
+      // Delete all bus schedules
+      await BusSchedules.deleteMany({});
+      res.json({ message: "All bus data deleted successfully" });
+  } catch (error) {
+      console.error("Error deleting all bus data:", error);
+      res.status(500).json({ error: "Internal Server Error" });
+  }
+});
+
+
 module.exports = router;
