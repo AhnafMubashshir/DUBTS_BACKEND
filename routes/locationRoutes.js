@@ -4,8 +4,11 @@ const cron = require('node-cron');
 
 const router = express.Router();
 
+let locationData = {};
+
 const fetchAndProcessData = async () => {
   try {
+    locationData = {};
     const currentDate = new Date();
     const currentDayOfWeek = currentDate.getDay();
     const currentDayName = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][currentDayOfWeek];
@@ -23,9 +26,9 @@ const fetchAndProcessData = async () => {
           (timeData) => timeData.time === currentTime
         );
 
-        // Process the fetched data as needed
-        if (timeWiseLocationData.length>0) {
+        if (timeWiseLocationData.length > 0) {
           console.log(`Bus: ${busLocation.name}\nBusCode: ${busLocation.code}\nCurrent Time Data: `, timeWiseLocationData);
+          locationData[busLocation.code] = { name: busLocation.name, code: busLocation.code, data: timeWiseLocationData }
         }
       }
     });
@@ -35,6 +38,10 @@ const fetchAndProcessData = async () => {
 };
 
 cron.schedule("* * * * * *", fetchAndProcessData);
+
+router.get("/get-real-time-data", async (req, res) => {
+  res.json(locationData);
+});
 
 router.put("/store-location/:busCode", async (req, res) => {
   const { busCode } = req.params;
