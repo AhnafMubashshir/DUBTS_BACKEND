@@ -1,7 +1,40 @@
 const express = require("express");
 const BusLocations = require("../models/LocationModels/busLocation");
+const cron = require('node-cron');
 
 const router = express.Router();
+
+const fetchAndProcessData = async () => {
+  try {
+    const currentDate = new Date();
+    const currentDayOfWeek = currentDate.getDay();
+    const currentDayName = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][currentDayOfWeek];
+    const currentTime = currentDate.toLocaleTimeString('en-US', { hour12: false });
+
+    console.log("Current Time: ", currentTime);
+
+    const allBuses = await BusLocations.find();
+
+    allBuses.forEach(async (busLocation) => {
+      const dateWiseLocationData = busLocation.dateWiseLocationData[0];
+
+      if (dateWiseLocationData) {
+        const timeWiseLocationData = dateWiseLocationData.timeWiseLocationData.filter(
+          (timeData) => timeData.time === currentTime
+        );
+
+        // Process the fetched data as needed
+        if (timeWiseLocationData.length>0) {
+          console.log(`Bus: ${busLocation.name}\nBusCode: ${busLocation.code}\nCurrent Time Data: `, timeWiseLocationData);
+        }
+      }
+    });
+  } catch (error) {
+    console.error("Error fetching and processing data:", error);
+  }
+};
+
+cron.schedule("* * * * * *", fetchAndProcessData);
 
 router.put("/store-location/:busCode", async (req, res) => {
   const { busCode } = req.params;
@@ -65,22 +98,22 @@ router.put("/store-location/:busCode", async (req, res) => {
 
 router.get("/get-all-locations", async (req, res) => {
   try {
-      const allLocations = await BusLocations.find();
-      res.json(allLocations);
+    const allLocations = await BusLocations.find();
+    res.json(allLocations);
   } catch (error) {
-      console.error("Error fetching all locations:", error);
-      res.status(500).json({ error: "Internal Server Error" });
+    console.error("Error fetching all locations:", error);
+    res.status(500).json({ error: "Internal Server Error" });
   }
 });
 
 router.delete("/delete-all-bus-location", async (req, res) => {
   try {
-      // Delete all bus schedules
-      await BusLocations.deleteMany({});
-      res.json({ message: "All bus location data deleted successfully" });
+    // Delete all bus schedules
+    await BusLocations.deleteMany({});
+    res.json({ message: "All bus location data deleted successfully" });
   } catch (error) {
-      console.error("Error deleting all bus location data:", error);
-      res.status(500).json({ error: "Internal Server Error" });
+    console.error("Error deleting all bus location data:", error);
+    res.status(500).json({ error: "Internal Server Error" });
   }
 });
 
