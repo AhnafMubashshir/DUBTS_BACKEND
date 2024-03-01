@@ -20,11 +20,11 @@ version: '3.3'
 
 services:
     dubts-backend:
-      image: 956950626976.dkr.ecr.eu-north-1.amazonaws.com/dubts_backend
-      # build:
-      #   context: .
-      #   dockerfile: Dockerfile
-      # container_name: app
+      # image: 956950626976.dkr.ecr.eu-north-1.amazonaws.com/dubts_backend
+      build:
+        context: .
+        dockerfile: Dockerfile
+      container_name: app
       ports:
         - "6069:6069"
       depends_on:

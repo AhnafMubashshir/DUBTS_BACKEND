@@ -4,6 +4,7 @@ const BusSchedules = require("../models/BusModels/busSchedules");
 const router = express.Router();
 
 router.post("/create-new-bus-schedule", async (req, res) => {
+  // console.log("Hello World... Connected here");
   try {
     const busesToCreate = req.body;
     let createdBuses = [];
