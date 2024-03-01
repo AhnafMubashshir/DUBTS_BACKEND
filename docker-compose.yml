@@ -1,0 +1,41 @@
+# version: '3'
+# services:
+#   app:
+#     build:
+#       context: .
+#       dockerfile: Dockerfile
+#     ports:
+#       - "3000:3000"
+#     # volumes:
+
+#   mongodb-service:
+#     image: mongo:7.0.6
+#     restart: unless-stopped
+#     ports:
+#        - "28017:27017"
+#     # volumes:
+#     #   - mongo-data:/data/db
+
+version: '3.3'
+
+services:
+    dubts-backend:
+      # image: 880451881092.dkr.ecr.ap-south-1.amazonaws.com/task-station23-dev:latest
+      build:
+        context: .
+        dockerfile: Dockerfile
+      container_name: app
+      ports:
+        - "6069:3000"
+      depends_on:
+        - mongodb-service
+      restart: unless-stopped
+
+    mongodb-service:
+      image: mongo
+      volumes:
+        - ./db:/data/db
+      ports:
+        - "28017:27017"
+      restart: unless-stopped
+#      command: bash -c "mongod --repair && mongod"
