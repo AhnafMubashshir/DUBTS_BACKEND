@@ -27,7 +27,7 @@ const fetchAndProcessData = async () => {
         );
 
         if (timeWiseLocationData.length > 0) {
-          console.log(`Bus: ${busLocation.name}\nBusCode: ${busLocation.code}\nCurrent Time Data: `, timeWiseLocationData);
+          // console.log(`Bus: ${busLocation.name}\nBusCode: ${busLocation.code}\nCurrent Time Data: `, timeWiseLocationData);
           locationData[busLocation.code] = { name: busLocation.name, code: busLocation.code, data: timeWiseLocationData }
         }
       }
