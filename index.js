@@ -17,5 +17,5 @@ const busRoutes = require("./routes/busRoutes");
 app.use("/dubts/bus-details", busRoutes);
 
 app.listen(PORT, () => {
-  console.log(`Server is running on port: ${PORT}`);
+  console.log(`Server is running on port: ${PORT} ***`);
 });
