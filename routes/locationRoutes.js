@@ -14,7 +14,7 @@ const fetchAndProcessData = async () => {
     const currentDayName = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][currentDayOfWeek];
     const currentTime = currentDate.toLocaleTimeString('en-US', { hour12: false });
 
-    // console.log("Current Time: ", currentTime);
+    console.log("Current Time: ", currentTime);
 
     const allBuses = await BusLocations.find();
 
