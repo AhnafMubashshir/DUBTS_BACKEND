@@ -40,6 +40,8 @@ const fetchAndProcessData = async () => {
 cron.schedule("* * * * * *", fetchAndProcessData);
 
 router.get("/get-real-time-data", async (req, res) => {
+  console.log("request for time wise location data");
+  console.log({locationData});
   res.json(locationData);
 });
 
