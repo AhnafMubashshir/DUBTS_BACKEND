@@ -14,7 +14,7 @@ const fetchAndProcessData = async () => {
     const currentDayName = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][currentDayOfWeek];
     const currentTime = currentDate.toLocaleTimeString('en-US', { hour12: false });
 
-    console.log("Current Time: ", currentTime);
+    // console.log("Current Time: ", currentTime);
 
     const allBuses = await BusLocations.find();
 
@@ -40,8 +40,8 @@ const fetchAndProcessData = async () => {
 cron.schedule("* * * * * *", fetchAndProcessData);
 
 router.get("/get-real-time-data", async (req, res) => {
-  console.log("request for time wise location data");
-  console.log({locationData});
+  // console.log("request for time wise location data");
+  // console.log({locationData});
   res.json(locationData);
 });
 
