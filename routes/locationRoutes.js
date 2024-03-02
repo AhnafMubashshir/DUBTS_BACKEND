@@ -60,7 +60,7 @@ router.put("/store-location/:busCode", async (req, res) => {
     const dayOfWeek = parsedDate.getDay();
     const dayName = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][dayOfWeek];
 
-    console.log(dayName);
+    // console.log(dayName);
 
     const createNewDateWiseLocation = () => {
       busLocation.dateWiseLocationData.push({
