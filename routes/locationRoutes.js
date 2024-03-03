@@ -1,6 +1,6 @@
 const express = require("express");
 const BusLocations = require("../models/LocationModels/busLocation");
-const cron = require('node-cron');
+const cron = require("node-cron");
 
 const router = express.Router();
 
@@ -11,8 +11,18 @@ const fetchAndProcessData = async () => {
     locationData = {};
     const currentDate = new Date();
     const currentDayOfWeek = currentDate.getDay();
-    const currentDayName = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][currentDayOfWeek];
-    const currentTime = currentDate.toLocaleTimeString('en-US', { hour12: false });
+    const currentDayName = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+    ][currentDayOfWeek];
+    const currentTime = currentDate.toLocaleTimeString("en-US", {
+      hour12: false,
+    });
 
     console.log("Current Time: ", currentTime);
 
@@ -22,13 +32,21 @@ const fetchAndProcessData = async () => {
       const dateWiseLocationData = busLocation.dateWiseLocationData[0];
 
       if (dateWiseLocationData) {
-        const timeWiseLocationData = dateWiseLocationData.timeWiseLocationData.filter(
-          (timeData) => timeData.time === currentTime
-        );
+        const timeWiseLocationData =
+          dateWiseLocationData.timeWiseLocationData.filter(
+            (timeData) => timeData.time === currentTime
+          );
 
         if (timeWiseLocationData.length > 0) {
-          console.log(`Bus: ${busLocation.name}\nBusCode: ${busLocation.code}\nCurrent Time Data: `, timeWiseLocationData);
-          locationData[busLocation.code] = { name: busLocation.name, code: busLocation.code, data: timeWiseLocationData }
+          console.log(
+            `Bus: ${busLocation.name}\nBusCode: ${busLocation.code}\nCurrent Time Data: `,
+            timeWiseLocationData
+          );
+          locationData[busLocation.code] = {
+            name: busLocation.name,
+            code: busLocation.code,
+            data: timeWiseLocationData,
+          };
         }
       }
     });
@@ -37,7 +55,43 @@ const fetchAndProcessData = async () => {
   }
 };
 
-cron.schedule("* * * * * *", fetchAndProcessData);
+// cron.schedule("* * * * * *", fetchAndProcessData);
+
+router.put(
+  "/edit-time-data/:busCode/:timeToUpdated/:updatedTime",
+  async (req, res) => {
+    const { busCode, timeToUpdated, updatedTime } = req.params;
+
+    try {
+      const busLocation = await BusLocations.findOne({ code: busCode });
+
+      if (!busLocation) {
+        return res.status(404).json({ message: "Bus not found" });
+      }
+
+      // Find and update all timeData entries where time starts with timeToUpdated
+      busLocation.dateWiseLocationData.forEach((dateData) => {
+        dateData.timeWiseLocationData.forEach((timeData) => {
+          if (timeData.time.startsWith(timeToUpdated)) {
+            timeData.time =
+              updatedTime + timeData.time.substring(timeToUpdated.length);
+
+            console.log(timeData.time);
+          }
+        });
+      });
+
+      // Save the changes to the database
+      // await busLocation.save();
+
+      console.log(`Time data updated successfully for Bus ${busCode}`);
+      res.json({ message: "Time data updated successfully" });
+    } catch (error) {
+      console.error("Error updating time data:", error);
+      res.status(500).json({ error: "Internal Server Error" });
+    }
+  }
+);
 
 router.get("/get-real-time-data", async (req, res) => {
   // console.log("request for time wise location data");
@@ -58,7 +112,15 @@ router.put("/store-location/:busCode", async (req, res) => {
     const { date, latitude, longitude, time } = req.body;
     const parsedDate = new Date(date);
     const dayOfWeek = parsedDate.getDay();
-    const dayName = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][dayOfWeek];
+    const dayName = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+    ][dayOfWeek];
 
     // console.log(dayName);
 
@@ -131,7 +193,9 @@ router.delete("/delete-bus-location-by-bus-name/:busName", async (req, res) => {
   try {
     // Delete all bus locations with the name "basanta"
     await BusLocations.deleteMany({ name: busName });
-    res.json({ message: `All bus location data with name ${busName} deleted successfully` });
+    res.json({
+      message: `All bus location data with name ${busName} deleted successfully`,
+    });
   } catch (error) {
     console.error("Error deleting location data:", error);
     res.status(500).json({ error: "Internal Server Error" });
@@ -143,7 +207,9 @@ router.delete("/delete-bus-location-by-bus-code/:busCode", async (req, res) => {
   try {
     // Delete all bus locations with the name "basanta"
     await BusLocations.deleteMany({ code: busCode });
-    res.json({ message: `All bus location data with code ${busCode} deleted successfully` });
+    res.json({
+      message: `All bus location data with code ${busCode} deleted successfully`,
+    });
   } catch (error) {
     console.error("Error deleting location data:", error);
     res.status(500).json({ error: "Internal Server Error" });
