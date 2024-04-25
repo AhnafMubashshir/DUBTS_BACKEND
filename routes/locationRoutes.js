@@ -10,6 +10,7 @@ const fetchAndProcessData = async () => {
   try {
     locationData = {};
     const currentDate = new Date();
+    const dateOptions = { timeZone: "Asia/Dhaka", hour12: false };
     const currentDayOfWeek = currentDate.getDay();
     const currentDayName = [
       "Sunday",
@@ -20,11 +21,9 @@ const fetchAndProcessData = async () => {
       "Friday",
       "Saturday",
     ][currentDayOfWeek];
-    const currentTime = currentDate.toLocaleTimeString("en-US", {
-      hour12: false,
-    });
+    const currentTime = currentDate.toLocaleTimeString("en-US", dateOptions);
 
-    console.log("Current Time: ", currentTime);
+    // console.log("Current Time: ", currentTime);
 
     const allBuses = await BusLocations.find();
 
@@ -38,10 +37,10 @@ const fetchAndProcessData = async () => {
           );
 
         if (timeWiseLocationData.length > 0) {
-          console.log(
-            `Bus: ${busLocation.name}\nBusCode: ${busLocation.code}\nCurrent Time Data: `,
-            timeWiseLocationData
-          );
+          // console.log(
+          //   `Bus: ${busLocation.name}\nBusCode: ${busLocation.code}\nCurrent Time Data: `,
+          //   timeWiseLocationData
+          // );
           locationData[busLocation.code] = {
             name: busLocation.name,
             code: busLocation.code,
@@ -55,12 +54,14 @@ const fetchAndProcessData = async () => {
   }
 };
 
-// cron.schedule("* * * * * *", fetchAndProcessData);
+cron.schedule("* * * * * *", fetchAndProcessData);
 
 router.put(
   "/edit-time-data/:busCode/:timeToUpdated/:updatedTime",
   async (req, res) => {
     const { busCode, timeToUpdated, updatedTime } = req.params;
+
+    console.log(busCode, timeToUpdated, updatedTime);
 
     try {
       const busLocation = await BusLocations.findOne({ code: busCode });
@@ -75,14 +76,51 @@ router.put(
           if (timeData.time.startsWith(timeToUpdated)) {
             timeData.time =
               updatedTime + timeData.time.substring(timeToUpdated.length);
-
-            console.log(timeData.time);
           }
         });
       });
 
       // Save the changes to the database
-      // await busLocation.save();
+      await busLocation.save();
+
+      console.log(`Time data updated successfully for Bus ${busCode}`);
+      res.json({ message: "Time data updated successfully" });
+    } catch (error) {
+      console.error("Error updating time data:", error);
+      res.status(500).json({ error: "Internal Server Error" });
+    }
+  }
+);
+
+router.put(
+  "/add-edited-time-data/:busCode/:timeToUpdated/:updatedTime",
+  async (req, res) => {
+    const { busCode, timeToUpdated, updatedTime } = req.params;
+
+    console.log(busCode, timeToUpdated, updatedTime);
+
+    try {
+      const busLocation = await BusLocations.findOne({ code: busCode });
+
+      if (!busLocation) {
+        return res.status(404).json({ message: "Bus not found" });
+      }
+
+      // Find and update all timeData entries where time starts with timeToUpdated
+      busLocation.dateWiseLocationData.forEach((dateData) => {
+        dateData.timeWiseLocationData.forEach((timeData) => {
+          if (timeData.time.includes(timeToUpdated) && !timeData.time.startsWith(timeToUpdated)) {
+            // Update the specific part of the time string with the updatedTime
+            const updatedTimeString = timeData.time.replace(timeToUpdated, updatedTime);
+            let newTimeData = timeData;
+            newTimeData.time = updatedTimeString;
+
+            dateData.timeWiseLocationData.push(newTimeData);
+          }
+        });
+      });
+      // Save the changes to the database
+      await busLocation.save();
 
       console.log(`Time data updated successfully for Bus ${busCode}`);
       res.json({ message: "Time data updated successfully" });
